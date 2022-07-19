@@ -1,0 +1,6 @@
+workflows:
+ test-application:
+    name: Test workflow
+    scripts:
+        - echo "It's working!"
+
