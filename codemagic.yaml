@@ -8,5 +8,4 @@ workflows:
         script: "echo \"It's working!\""
       - 
         name: Building
-        script: "xcodebuild build -project "MyXcodeProject.xcodeproj" -scheme \"SwiftUI-test\" CODE_SIGN_INDENTITY=\"\" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO"
-
+        script: "xcodebuild build -project \"MyXcodeProject.xcodeproj\" -scheme \"SwiftUI-test\" CODE_SIGN_INDENTITY=\"\" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO"
