@@ -1,6 +1,12 @@
-workflows:
- test-application:
-    name: Test workflow
-    scripts:
-        - echo "It's working!"
+--- 
+workflows: 
+  test-application: 
+    name: "Test workflow"
+    scripts: 
+      - 
+        name: Started
+        script: "echo \"It's working!\""
+      - 
+        name: Building
+        script: "xcodebuild build -workspace \"SwiftUI-test.xcworkspace\" -scheme \"SwiftUI-test\" CODE_SIGN_INDENTITY=\"\" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO"
 
